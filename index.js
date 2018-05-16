@@ -22,7 +22,7 @@ function deepestChild() {
   let grandnode = document.getElementById('#grand-node')
   let deepChild = grandnode.children[0]
   
-    for (var i = 0; !deepChild.children[i]; i) {
+    for (var i = 0; !deepChild.children[i]; i++) {
     deepChild = deepChild.children[0]
   }
   return deepChild;
