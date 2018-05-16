@@ -18,19 +18,8 @@ function increaseRankBy(n) {
 }
 
 
-function deepestChild() {
-  
-  let grandNode = document.querySelector("div#grand-node");
-  let nodes = grandNode.children
-  
-  if (nodes.lenth === 0) {
-    return grandNode.children[0]
-  }
-  
-  let deepNode = grandNode.children[0]
-  
-  for (let i = 0; !deepNode.children[i]; i++) {
-    deepNode = deepNode.children[0]
-  }
-  return deepNode;
+function deepestChild(){
+  var deep = document.getElementById('grand-node').querySelectorAll('div')
+  return deep[deep.length-1]
+
 }
