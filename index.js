@@ -8,5 +8,7 @@ function nestedTarget(target, nested) {
 }
 
 function increaseRankBy(n) {
+  let rankingList = document.getElementById('ranked-list')
   
+  for (let i = 0; i < 1 )
 }
