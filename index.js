@@ -22,9 +22,10 @@ function deepestChild() {
   let grandnode = document.getElementById('#grand-node')
   let deepChild = grandnode.children[0]
   
-  if (grandnode.children[0] === true) {
+  if (deepChild.length === 0) {
     
-    return grandnode.children[0] 
+    return deepChild
+    
   } else {
   
     for (var i = 0; !deepChild.children[i]; i++) {
