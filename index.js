@@ -27,6 +27,8 @@ function deepestChild() {
     return grandNode.children[0]
   }
   
+  let deepNode = grandNode.children[0]
+  
   for (let i = 0; !deepNode.children[i]; i++) {
     deepNode = deepNode.children[0]
   }
